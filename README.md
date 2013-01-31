@@ -67,6 +67,8 @@ The only required parameters are the `table` and `loader` parameters. You can ch
 | msgRelease | `string`  | Release to refresh... |
 | msgUpdating | `string` | Updating... |
 | msgUpdated | `string` | Last Updated: %s %s |
+| backgroundColor | `string` | #e2e7ed |
+| fontColor | `string` | #576c89 |
 
 ## Addtional API functions
 As from 1.1 you can also manually show and hide the view, update it's *Last Updated* date or trigger the complete cycle of the widget. Use this for example upon first load of the table or as long the table is empty.
@@ -81,6 +83,8 @@ As from 1.1 you can also manually show and hide the view, update it's *Last Upda
 | remove   |            | Undo the init |
 
 ## Changelog
+* 1.2
+  * Exposed color options
 * 1.1
   * Exposed new API functions to show/hide the view, set the date and trigger the widget manually.
   * Renamed 'load' parameter to 'loader' in line with upcomming widgets.

@@ -1,34 +1,43 @@
 "#headerPullView": {
- backgroundColor:'#e2e7ed',
-    top: 0, right: 0, left: 0,
-    height:60
+	backgroundColor: "#e2e7ed",
+	top: 0,
+	right: 0,
+	left: 0,
+	height: 60
 },
-
 "#arrow": {
-    left: 20, bottom:10,
-    width:23, height:60,
-    
-    image: WPATH('images/whiteArrow.png')
+	left: 20,
+	bottom: 10,
+	width: 23,
+	height: 60
 },
-
 "#activityIndicator": {
-	left:20, bottom:13,
-    width:30, height:30	
+	left: 20,
+	bottom: 25,
+	width: 30,
+	height: 30
 },
-
 "#status": {
-    color:'#576c89',
-    font:{fontSize:13, fontWeight:'bold'},
-    text:'Pull down to refresh...',
-    textAlign:'center',
-    left:55, bottom:30,
-    width:200
+	color: "#576c89",
+	font: {
+		fontSize: 13,
+		fontWeight: "bold"
+	},
+	text: "Pull down to refresh...",
+	textAlign: "center",
+	left: 55,
+	right: 55,
+	bottom: 40,
+	height: 15
 },
-
 "#updated": {
-    color:'#576c89',
-    font:{fontSize:12},
-    textAlign:'center',
-    left:55, bottom:15,
-    width:200
+	color: "#576c89",
+	font: {
+		fontSize: 12
+	},
+	textAlign: "center",
+	left: 55,
+	right: 55,
+	bottom: 25,
+	height: 15
 }
