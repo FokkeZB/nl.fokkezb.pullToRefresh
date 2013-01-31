@@ -2,6 +2,7 @@
 	<View id="headerPullView">
 		<ImageView id="arrow" />
 		<ActivityIndicator id="activityIndicator" />
+		
 		<Label id="status">Pull down to refresh</Label>
 		<Label id="updated" />
 	</View>
