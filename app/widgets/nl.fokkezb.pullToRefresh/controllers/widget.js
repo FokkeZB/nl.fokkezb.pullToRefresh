@@ -11,7 +11,7 @@ var offset = 0;
 
 function doShow(msg) {
 	
-	if (!innited || pulled) {
+	if (!initted || pulled) {
 		return false;
 	}
 	
