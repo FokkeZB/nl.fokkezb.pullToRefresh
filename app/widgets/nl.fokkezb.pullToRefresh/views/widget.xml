@@ -1,8 +1,8 @@
 <Alloy>
  	<View id="headerPullView">
 		<ImageView id="arrow" />
-		<ActivityIndicator id="activityIndicator" />
 		<Label id="status">Pull down to refresh</Label>
 		<Label id="updated"></Label>
+		<ActivityIndicator id="activityIndicator" />
 	</View>
 </Alloy>

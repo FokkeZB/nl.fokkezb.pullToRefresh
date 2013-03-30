@@ -1,19 +1,19 @@
 "#headerPullView": {
- backgroundColor:'#e2e7ed',
+    backgroundColor:'#e2e7ed',
     top: 0, right: 0, left: 0,
     height:60
 },
-
 "#arrow": {
-    left: 20, bottom:10,
-    width:23, height:60,
-    
+    left: 20, 
+    bottom:10,    
     image: WPATH('images/whiteArrow.png')
 },
 
 "#activityIndicator": {
-	left:20, bottom:13,
-    width:30, height:30	
+	left:20,
+	bottom:10,
+	height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE
 },
 
 "#status": {
@@ -21,14 +21,12 @@
     font:{fontSize:13, fontWeight:'bold'},
     text:'Pull down to refresh...',
     textAlign:'center',
-    left:55, bottom:30,
-    width:200
+    bottom:30
 },
 
 "#updated": {
     color:'#576c89',
     font:{fontSize:12},
     textAlign:'center',
-    left:55, bottom:15,
-    width:200
+    bottom:15
 }
