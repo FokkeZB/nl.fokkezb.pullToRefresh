@@ -128,6 +128,8 @@ function doInit(args) {
 		msgUpdating: 'Updating...',
 		msgUpdated: 'Last Updated: %s %s'
 	});
+	
+	$.status.text = options.msgPull;
 
 	options.table.setHeaderPullView($.headerPullView);
 	 
