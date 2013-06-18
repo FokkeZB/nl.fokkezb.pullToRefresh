@@ -21,8 +21,7 @@ function doShow(msg) {
     $.arrow.hide();
     $.activityIndicator.show();
     
-    options.table.setContentInsets({top:80}, {animated:true});
-    
+    options.table.setContentInsets({top:options.offset}, {animated:true});
     return true;
 }
 
@@ -91,13 +90,13 @@ function scrollListener(e) {
     	return;
     }
     
-    if (pulling && !loading && offset > -80 && offset < 0){
+    if (pulling && !loading && offset > -options.offset && offset < 0){
         pulling = false;
         var unrotate = Ti.UI.create2DMatrix();
         $.arrow.animate({transform:unrotate, duration:180});
         $.status.text = options.msgPull;
         
-    } else if (!pulling && !loading && offset < -80){
+    } else if (!pulling && !loading && offset < -options.offset){
         pulling = true;
         var rotate = Ti.UI.create2DMatrix().rotate(180);
         $.arrow.animate({transform:rotate, duration:180});
@@ -106,35 +105,48 @@ function scrollListener(e) {
 }
 
 function dragEndListener(e) {
-	
-    if (!pulled && pulling && !loading && offset < -80){
+    if (!pulled && pulling && !loading && offset < -options.offset){
         pulling = false;
-       
 		doTrigger();
     }
 }
 
 function doInit(args) {
-	
 	if (initted || !OS_IOS) {
 		return false;
 	}
-	
-	initted = true;
 
 	options = _.defaults(args, {
 		msgPull: 'Pull down to refresh...',
 		msgRelease: 'Release to refresh...',
 		msgUpdating: 'Updating...',
-		msgUpdated: 'Last Updated: %s %s'
+		msgUpdated: 'Last Updated: %s %s',
+		offset:80,
+		backgroundColor: '#e2e7ed',
+		fontColor: '#576c89',
+		image: WPATH('images/whiteArrow.png'),
+		activityIndicatorStyle:Ti.UI.iPhone.ActivityIndicatorStyle.PLAIN
 	});
 	
 	$.status.text = options.msgPull;
 
+	//styling
+	$.status.color = options.fontColor;
+	$.updated.color = options.fontColor; 
+	$.arrow.image = options.image;
+	$.activityIndicator.style = options.activityIndicatorStyle;
+	$.headerPullView.applyProperties({
+		height: options.offset - 15,
+		backgroundColor: options.backgroundColor
+	});
+	
 	options.table.setHeaderPullView($.headerPullView);
-	 
 	options.table.addEventListener('scroll', scrollListener);
 	options.table.addEventListener('dragEnd', dragEndListener);
+	
+	
+	//init
+	initted = true;
 }
 
 function doRemove() {
