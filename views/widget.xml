@@ -2,6 +2,7 @@
 	<HeaderPullView platform="ios">
         <Widget src="nl.fokkezb.pullToRefresh" name="view" id="view" />
 	</HeaderPullView>
+	
     <HeaderView platform="android">
         <Widget src="nl.fokkezb.pullToRefresh" name="view" id="view" />
     </HeaderView>

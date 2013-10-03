@@ -1,49 +1,38 @@
 ".ptr": {
     width: Ti.UI.FILL,
     height: 51,
-    
-    backgroundColor: '#f5f8fa'
-}
-
+    backgroundColor: "#F5F8FA"
+},
 ".ptrCenter": {
     bottom: 11,
-    width: Ti.UI.SIZE, height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
     visible: false
-}
-
+},
 ".ptrArrow": {
     left: 8,
     width: 12,
-    height: 30,
-    
-    image: WPATH('/images/clean.png')
-}
-
+    height: 30,  
+    image: WPATH("/images/clean.png")
+},
 ".ptrIndicator": {
     left: 0,
-    
     style: Ti.UI.ActivityIndicatorStyle.DARK
-}
-
+},
 ".ptrIndicator[platform=ios]": {
     style: Ti.UI.iPhone.ActivityIndicatorStyle.DARK
-}
-
+},
 ".ptrText": {
     left: 30,
     wordWrap: false,
-    
-    color: '#8899a6',
-
+    color: "#8899A6",
     font: {
         fontSize: 13
     }
-}
-
+},
 ".ptrLine": {
     bottom: 0,
     height: 1,
     width: Ti.UI.FILL,
-
-    backgroundColor: '#e1e8ed',
+    backgroundColor: "#E1E8ED",
 }

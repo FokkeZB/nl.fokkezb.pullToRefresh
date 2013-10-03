@@ -2,9 +2,12 @@
     <View id="ptr" class="ptr">
         <View id="prtCenter" class="ptrCenter">
             <ImageView id="ptrArrow" class="ptrArrow" />
+            
             <ActivityIndicator id="ptrIndicator" class="ptrIndicator" />
+            
             <Label id="ptrText" class="ptrText" />
         </View>
+        
         <View id="prtLine" class="ptrLine" />
     </View>
 </Alloy>
