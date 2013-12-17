@@ -116,6 +116,10 @@ function refresh() {
 
 function scrollListener(e) {
 
+	if (typeof(e.contentOffset) === 'undefined') {
+		return;
+	}
+
 	if (OS_IOS) {
 
 		if (pulled) {
