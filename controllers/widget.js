@@ -1,9 +1,9 @@
 var args = arguments[0] || {};
 
 var options = {
-	msgPull: L('ptrPull', 'Pull to refresh...'),
-	msgRelease: L('ptrRelease', 'Release to refresh...'),
-	msgUpdating: L('ptrUpating', 'Updating...'),
+	msgPull: L('msgPull', L('ptrPull', 'Pull to refresh...')),
+	msgRelease: L('msgRelease', L('ptrRelease', 'Release to refresh...'),)
+	msgUpdating: L('msgUpdating', L('ptrUpdating', L('ptrUpating', 'Updating...'))),
 	top: 0
 };
 
