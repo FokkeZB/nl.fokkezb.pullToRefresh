@@ -24,6 +24,10 @@ $.show = show;
 
   if (OS_IOS) {
     refreshControl = Ti.UI.createRefreshControl();
+
+    if (_.has(args, 'title')) refreshControl.setTitle(args.title);
+    if (_.has(args, 'tintColor')) refreshControl.setTintColor(args.tintColor);
+
     refreshControl.addEventListener('refreshstart', onRefreshstart);
 
     list.refreshControl = refreshControl;
