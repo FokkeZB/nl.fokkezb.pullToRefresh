@@ -3,11 +3,11 @@
 	"name": "Pull to Refresh Widget",
 	"description" : "Uniform wrapper for iOS RefreshControl and Android SwipeRefreshLayout.",
 	"author": "Fokke Zandbergen",
-	"version": "3.0.0",
+	"version": "4.0.0",
 	"copyright":"Copyright (c) 2013-2015",
 	"license":"Apache 2.0",
 	"min-alloy-version": "1.5",
-	"min-titanium-version":"3.4",
+	"min-titanium-version":"6.2",
 	"tags":"tableview,headerpullview,pulltorefresh,swiperefreshlayout,listview,pullview,refreshcontrol,ticollectionview",
 	"platforms":"ios,android",
 	"modules": {
